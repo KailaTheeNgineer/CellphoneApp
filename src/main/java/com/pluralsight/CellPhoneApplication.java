@@ -11,30 +11,26 @@ public class CellPhoneApplication {
 
                 CellPhone phone = new CellPhone();
         System.out.print("What is the Serial Number? ");
-        int serialNumber = mouse.nextInt();
-        phone.setserialNumber(serialNumber);
+        phone.setserialNumber(mouse.nextInt());
         mouse.nextLine();
 
         System.out.print("What Model is the Phone? ");
-        String model = mouse.nextLine();
-        phone.setmodel(model);
+        phone.setmodel(mouse.nextLine());
 
         System.out.print("Who is the Carrier? ");
-        String carrier = mouse.nextLine();
-        phone.setcarrier(carrier);
+        phone.setcarrier(mouse.nextLine());
 
         System.out.print("What is the Phone Number? ");
-        String phoneNumber = mouse.nextLine();
-        phone.setphoneNumber(phoneNumber);
+        phone.setphoneNumber(mouse.nextLine());
 
         System.out.print("Who owns the Phone? ");
-        String owner = mouse.nextLine();
-        phone.setowner(owner);
+        phone.setowner(mouse.nextLine());
 
-        System.out.println("\n" + "Phone Information" + "\n" + "Serial Number: " + phone.getserialNumber());
+        System.out.println("\n" + "Phone Information" + "\n" + "Serial Number: " +
+                                    phone.getserialNumber());
         
         System.out.println("Model: " + phone.getmodel());
-        System.out.println("Carrier: " + phone.getcarrier());
+    System.out.println("Carrier: " + phone.getcarrier());
         System.out.println("Phone Number: " + phone.getphoneNumber());
         System.out.println("Owner: " + phone.getowner());
     }
